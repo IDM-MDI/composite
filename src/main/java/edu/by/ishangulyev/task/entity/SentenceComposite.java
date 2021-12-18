@@ -56,9 +56,12 @@ public class SentenceComposite implements TextComponent
     @Override
     public String toString()
     {
-        return "SentenceComposite{" +
-                "value='" + value + '\'' +
-                '}';
+        StringBuilder sb = new StringBuilder();
+        return sb.append("Sentence")
+                .append("value = ")
+                .append(value)
+                .append(" }")
+                .toString();
     }
 
     @Override

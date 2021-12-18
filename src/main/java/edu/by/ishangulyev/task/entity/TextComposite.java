@@ -69,10 +69,11 @@ public class TextComposite implements TextComponent
     @Override
     public String toString()
     {
-        return "TextComposite{" +
-                "paragraphs=" + paragraphs +
-                ", type=" + type +
-                ", value='" + value + '\'' +
-                '}';
+        StringBuilder sb = new StringBuilder();
+        return sb.append("Text{ ")
+                .append("value = ")
+                .append(value)
+                .append(" }")
+                .toString();
     }
 }

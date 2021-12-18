@@ -44,30 +44,41 @@ public class SymbolComposite implements TextComponent
     @Override
     public List<TextComponent> getChildNodes() throws TextException
     {
-        return null;
+        throw new TextException("Symbol have not child nodes");
     }
 
     @Override
-    public List<TextComponent> getTextComponent()
+    public List<TextComponent> getTextComponent() throws TextException
     {
-        return null;
+        throw new TextException("Symbol have not TextComponent");
     }
 
     @Override
-    public boolean add(TextComponent component)
+    public boolean add(TextComponent component) throws TextException
     {
-        return false;
+        throw new TextException("Symbol have not TextComponent");
     }
 
     @Override
-    public boolean remove(TextComponent component)
+    public boolean remove(TextComponent component) throws TextException
     {
-        return false;
+        throw new TextException("Symbol have not TextComponent");
     }
 
     @Override
     public TextType getType()
     {
-        return null;
+        return type;
+    }
+
+    @Override
+    public String toString()
+    {
+        StringBuilder sb = new StringBuilder();
+        return sb.append("Symbol{ ")
+                .append("value = ")
+                .append(value)
+                .append(" }")
+                .toString();
     }
 }

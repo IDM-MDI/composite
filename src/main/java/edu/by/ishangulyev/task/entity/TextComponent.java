@@ -7,9 +7,9 @@ import java.util.List;
 public interface TextComponent
 {
     List<TextComponent> getChildNodes() throws TextException;
-    List<TextComponent> getTextComponent();
-    boolean add(TextComponent component);
-    boolean remove(TextComponent component);
+    List<TextComponent> getTextComponent() throws TextException;
+    boolean add(TextComponent component) throws TextException;
+    boolean remove(TextComponent component) throws TextException;
     TextType getType();
     String getValue();
     void setValue(String value);

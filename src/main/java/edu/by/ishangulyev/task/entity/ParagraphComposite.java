@@ -38,10 +38,12 @@ public class ParagraphComposite implements TextComponent
     @Override
     public String toString()
     {
-
-        return "ParagraphComposite{" +
-                "value='" + value + '\'' +
-                '}';
+        StringBuilder sb = new StringBuilder();
+        return sb.append("Paragraph{")
+                .append("value = ")
+                .append(value)
+                .append(" }")
+                .toString();
     }
 
     @Override

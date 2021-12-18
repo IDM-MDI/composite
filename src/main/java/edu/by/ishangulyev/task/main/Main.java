@@ -7,6 +7,8 @@ import edu.by.ishangulyev.task.exception.TextException;
 import edu.by.ishangulyev.task.parser.*;
 import edu.by.ishangulyev.task.reader.ReaderBuilder;
 import edu.by.ishangulyev.task.reader.impl.ReaderBuilderImpl;
+import edu.by.ishangulyev.task.service.TextService;
+import edu.by.ishangulyev.task.service.impl.TextServiceImpl;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -54,6 +56,7 @@ public class Main
                 }
             }
         }
-        System.out.println("Thats all)))");
+        TextService service = new TextServiceImpl();
+        System.out.println(service.findLongWord(mainComponent));
     }
 }

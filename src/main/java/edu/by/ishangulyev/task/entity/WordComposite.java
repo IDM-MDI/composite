@@ -58,4 +58,15 @@ public class WordComposite implements TextComponent
     {
         this.value = value;
     }
+
+    @Override
+    public String toString()
+    {
+        StringBuilder sb = new StringBuilder();
+        return sb.append("Word{ ")
+                .append("value = ")
+                .append(value)
+                .append(" }")
+                .toString();
+    }
 }
