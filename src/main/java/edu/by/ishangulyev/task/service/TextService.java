@@ -7,10 +7,10 @@ import edu.by.ishangulyev.task.exception.TextException;
 
 public interface TextService
 {
-    void sortBySentence(TextComponent component);
+    void sortBySentence(TextComponent component) throws TextException;
     TextComponent findLongWord(TextComponent component) throws TextException;
     void deleteLessThatNumber(TextComponent component,int number) throws TextException;
-    String countSimilarWord(TextComponent component);
+    String countSimilarWord(TextComponent component) throws TextException;
     int vowelCount(TextComponent composite);
     int consonantCount(TextComponent component);
 }

@@ -57,6 +57,6 @@ public class Main
             }
         }
         TextService service = new TextServiceImpl();
-        System.out.println(service.findLongWord(mainComponent));
+        service.sortBySentence(mainComponent);
     }
 }
